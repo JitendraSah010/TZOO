@@ -86,7 +86,7 @@ function EmployeeAccount() {
                     community. Together, we thrive.
                   </p>
                   <h4>
-                    Your shift: Morning
+                    Your shift:
                     {shift.shift === "1"
                       ? "Morning (06:00 AM - 12:00 PM)"
                       : shift.shift === "2"
