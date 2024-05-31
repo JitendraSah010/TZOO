@@ -3,7 +3,6 @@ import Container from "react-bootstrap/Container";
 import Nav from "react-bootstrap/Nav";
 import Navbar from "react-bootstrap/Navbar";
 import { Link, useNavigate } from "react-router-dom";
-import { MdOutlineSearch } from "react-icons/md";
 import { toast } from "react-toastify";
 
 function AnimalDash_Navbar() {
@@ -11,7 +10,7 @@ function AnimalDash_Navbar() {
 
   const logoutHandler = async () => {
     try {
-      const response = await fetch("http://localhost:4000/user/logout", {
+      const response = await fetch("/user/logout", {
         method: "POST",
         credentials: "include",
         headers: {

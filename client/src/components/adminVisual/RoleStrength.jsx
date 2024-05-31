@@ -7,7 +7,7 @@ const RoleStrength = () => {
     useEffect(() => {
         const fetchData = async () => {
             try {
-                const response = await fetch("http://localhost:4000/staff/roleStrength", {
+                const response = await fetch("/staff/roleStrength", {
                     method: "GET",
                     credentials: "include",
                     headers: {

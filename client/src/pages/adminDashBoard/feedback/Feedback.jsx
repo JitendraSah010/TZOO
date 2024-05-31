@@ -8,7 +8,7 @@ function Feedback() {
 
     const getFeedbacks = async()=>{
         try {
-            const response = await fetch("http://localhost:4000/feedback", {
+            const response = await fetch("/feedback", {
               method: "GET",
               credentials: "include",
               headers: {

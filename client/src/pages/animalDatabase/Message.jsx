@@ -14,7 +14,7 @@ function Message() {
 
   const resolveAnimalHandler = async (id) => {
     try {
-      const response = await fetch(`http://localhost:4000/animalMessage/${id}`, {
+      const response = await fetch(`/animalMessage/${id}`, {
         method: 'DELETE',
         credentials: "include",
         headers: {
@@ -39,7 +39,7 @@ function Message() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:4000/animalMessage/", {
+        const response = await fetch("/animalMessage/", {
           method: "GET",
           credentials: "include",
           headers: {
@@ -63,7 +63,7 @@ function Message() {
           const promises = data.map(async (user) => {
             const id = user.user;
             // console.log(id);
-            const response = await fetch(`http://localhost:4000/user/${id}`, {
+            const response = await fetch(`/user/${id}`, {
               method: "GET",
               credentials: "include",
               headers: {
@@ -92,7 +92,7 @@ function Message() {
           const promises = data.map(async (user) => {
             const id = user.animal;
             // console.log(id);
-            const response = await fetch(`http://localhost:4000/animal/${id}`, {
+            const response = await fetch(`/animal/${id}`, {
               method: "GET",
               credentials: "include",
               headers: {

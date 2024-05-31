@@ -28,7 +28,7 @@ function AddStaff() {
         e.preventDefault();
         console.log(inputData)
         try {
-            const response = await fetch('http://localhost:4000/staff/', {
+            const response = await fetch('/staff/', {
                 method: 'POST',
                 credentials: "include",
                 headers: {

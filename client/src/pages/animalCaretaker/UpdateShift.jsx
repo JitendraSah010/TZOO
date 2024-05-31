@@ -25,7 +25,7 @@ function UpdateShift() {
     e.preventDefault();
     console.log(inputData);
     try {
-      const response = await fetch(`http://localhost:4000/staff/shift/${id}`, {
+      const response = await fetch(`/staff/shift/${id}`, {
         method: "PUT",
         credentials: "include",
         headers: {
@@ -51,7 +51,7 @@ function UpdateShift() {
 
   const deleteHandler = async () => {
     try {
-      const response = await fetch(`http://localhost:4000/shiftChange/${id}`, {
+      const response = await fetch(`/shiftChange/${id}`, {
         method: 'DELETE',
         credentials: "include",
         headers: {
@@ -75,7 +75,7 @@ function UpdateShift() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/staff/${id}`, {
+        const response = await fetch(`/staff/${id}`, {
           method: "GET",
           credentials: "include",
           headers: {
@@ -97,7 +97,7 @@ function UpdateShift() {
     const shiftData = async () => {
       try {
         const response = await fetch(
-          `http://localhost:4000/shiftChange/${id}`,
+          `/shiftChange/${id}`,
           {
             method: "GET",
             credentials: "include",

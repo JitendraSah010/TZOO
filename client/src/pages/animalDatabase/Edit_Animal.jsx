@@ -20,7 +20,7 @@ const navigate = useNavigate()
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/animal/${id}`, {
+        const response = await fetch(`/animal/${id}`, {
           method: "GET",
           credentials: "include",
           headers: {
@@ -47,7 +47,7 @@ const navigate = useNavigate()
 
     try {
       const response = await fetch(
-        `http://localhost:4000/animal/${id}`,
+        `/animal/${id}`,
         {
           method: "PUT",
           credentials: "include",

@@ -25,7 +25,7 @@ function Add_MedicalRecords() {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:4000/medicalRecords/${animalId}`, {
+      const response = await fetch(`/medicalRecords/${animalId}`, {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

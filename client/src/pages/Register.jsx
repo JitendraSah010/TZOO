@@ -32,7 +32,7 @@ function Register() {
             throw new Error('Password do not match');
         }
 
-        const response = await fetch('http://localhost:4000/user/register', {
+        const response = await fetch('/user/register', {
             method: 'POST',
             credentials: "include",
             headers: {

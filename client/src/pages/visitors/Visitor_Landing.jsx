@@ -13,7 +13,7 @@ function Visitor_Landing() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:4000/user/byUserId", {
+        const response = await fetch("/user/byUserId", {
           method: "GET",
           credentials: "include",
           headers: {
@@ -34,7 +34,7 @@ function Visitor_Landing() {
     const shiftData = async () => {
       try {
         const response = await fetch(
-          "http://localhost:4000/staff/shiftByUserId",
+          "/staff/shiftByUserId",
           {
             method: "GET",
             credentials: "include",
@@ -56,7 +56,7 @@ function Visitor_Landing() {
 
     const announcementData = async () => {
       try {
-        const response = await fetch("http://localhost:4000/announcement/", {
+        const response = await fetch("/announcement/", {
           method: "GET",
           credentials: "include",
           headers: {
@@ -76,7 +76,7 @@ function Visitor_Landing() {
 
     const eventData = async () => {
       try {
-        const response = await fetch("http://localhost:4000/event/", {
+        const response = await fetch("/event/", {
           method: "GET",
           credentials: "include",
           headers: {
@@ -107,7 +107,7 @@ function Visitor_Landing() {
     e.preventDefault();
     console.log("hi pyemnt")
     try {
-      const response = await fetch("http://localhost:4000/payment", {
+      const response = await fetch("/payment", {
         method: "GET",
         credentials: "include",
         headers: {

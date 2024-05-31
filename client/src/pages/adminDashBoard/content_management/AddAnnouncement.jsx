@@ -18,7 +18,7 @@ function AddAnnouncement() {
     const addNewAnnouncementHandler = async (e) => {
         e.preventDefault();
         try {
-          const response = await fetch("http://localhost:4000/announcement/", {
+          const response = await fetch("/announcement/", {
             method: "POST",
             headers: {
               "Content-Type": "application/json",

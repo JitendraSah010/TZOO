@@ -20,7 +20,7 @@ function PaymentSuccess() {
 
       // Fetch payment data using extracted parameters
       const response = await fetch(
-        `http://localhost:4000/visitor/payment/success?paymentId=${paymentId}&token=${token}&PayerID=${payerId}`,
+        `/visitor/payment/success?paymentId=${paymentId}&token=${token}&PayerID=${payerId}`,
         {
           method: "GET",
           credentials: "include",

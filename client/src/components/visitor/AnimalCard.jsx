@@ -6,7 +6,7 @@ function AnimalCard(props) {
     const handlePayment = async (e) => {
       e.preventDefault();
       try {
-        const response = await fetch("http://localhost:4000/payment", {
+        const response = await fetch("/payment", {
           method: "GET",
           credentials: "include",
           headers: {

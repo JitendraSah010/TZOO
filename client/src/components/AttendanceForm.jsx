@@ -14,7 +14,7 @@ function AttendanceForm() {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:4000/attendance/", {
+      const response = await fetch("/attendance/", {
         method: "POST",
         credentials: "include",
         headers: {

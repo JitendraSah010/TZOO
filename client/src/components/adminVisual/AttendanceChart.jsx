@@ -8,7 +8,7 @@ const AttendanceChart = () => {
     
         const fetchData = async () => {
             try {
-                const response = await fetch("http://localhost:4000/attendance", {
+                const response = await fetch("/attendance", {
                     method: "GET",
                     credentials: "include",
                     headers: {

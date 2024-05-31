@@ -15,7 +15,7 @@ function Admin_Dash_Nav() {
 
   const logoutHandler = async () => {
     try {
-        const response = await fetch('http://localhost:4000/user/logout', {
+        const response = await fetch('/user/logout', {
             method: 'POST',
             credentials: "include",
             headers: {

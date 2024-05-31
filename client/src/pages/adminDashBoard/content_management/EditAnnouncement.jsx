@@ -21,7 +21,7 @@ function EditAnnouncement() {
         e.preventDefault();
     
         try {
-          const response = await fetch(`http://localhost:4000/announcement/${id}`, {
+          const response = await fetch(`/announcement/${id}`, {
             method: "PUT",
             credentials: "include",
             headers: {
@@ -48,7 +48,7 @@ function EditAnnouncement() {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await fetch(`http://localhost:4000/announcement/${id}`, {
+            const response = await fetch(`/announcement/${id}`, {
               method: "GET",
               credentials: "include",
               headers: {

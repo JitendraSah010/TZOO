@@ -24,7 +24,7 @@ function ReportAnimalStatus() {
         const {message} = inputData
         const animal = data._id
         try {
-          const response = await fetch("http://localhost:4000/animalMessage/", {
+          const response = await fetch("/animalMessage/", {
             method: "POST",
             credentials: "include",
             headers: {
@@ -51,7 +51,7 @@ function ReportAnimalStatus() {
     useEffect(() => {
         const fetchData = async () => {
           try {
-            const response = await fetch(`http://localhost:4000/animal/${id}`, {
+            const response = await fetch(`/animal/${id}`, {
               method: "GET",
               credentials: "include",
               headers: {

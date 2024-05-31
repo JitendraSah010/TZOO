@@ -11,7 +11,7 @@ function AnimalDash_Navbar() {
 
   const logoutHandler = async () => {
     try {
-        const response = await fetch('http://localhost:4000/user/logout', {
+        const response = await fetch('/user/logout', {
             method: 'POST',
             credentials: "include",
             headers: {

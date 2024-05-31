@@ -16,7 +16,7 @@ function MedicalRecords() {
 
   const deleteRecordHandler = async (id) => {
     try {
-      const response = await fetch(`http://localhost:4000/medicalRecords/${id}`, {
+      const response = await fetch(`/medicalRecords/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json'
@@ -40,7 +40,7 @@ function MedicalRecords() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/medicalRecords/all/${animalId}`, {
+        const response = await fetch(`/medicalRecords/all/${animalId}`, {
           method: "GET",
           credentials: "include",
           headers: {

@@ -32,7 +32,7 @@ function AddEvent() {
     e.preventDefault();
     console.log(inputData)
     try {
-      const response = await fetch("http://localhost:4000/event/", {
+      const response = await fetch("/event/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

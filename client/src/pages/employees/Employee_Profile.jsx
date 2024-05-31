@@ -10,7 +10,7 @@ function Employee_Profile() {
 
         const fetchData = async () => {
             try {
-              const response = await fetch("http://localhost:4000/user/byUserId", {
+              const response = await fetch("/user/byUserId", {
                 method: "GET",
                 credentials: "include",
                 headers: {

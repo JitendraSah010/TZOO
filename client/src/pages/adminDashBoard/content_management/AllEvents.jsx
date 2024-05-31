@@ -10,7 +10,7 @@ function AllEvents() {
 
   const deleteEventHandler = async (id) => {
     try {
-      const response = await fetch(`http://localhost:4000/event/${id}`, {
+      const response = await fetch(`/event/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json'
@@ -34,7 +34,7 @@ function AllEvents() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:4000/event/", {
+        const response = await fetch("/event/", {
           method: "GET",
           credentials: "include",
           headers: {

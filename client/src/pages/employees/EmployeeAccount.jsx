@@ -15,7 +15,7 @@ function EmployeeAccount() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:4000/user/byUserId", {
+        const response = await fetch("/user/byUserId", {
           method: "GET",
           credentials: "include",
           headers: {
@@ -36,7 +36,7 @@ function EmployeeAccount() {
     const shiftData = async () => {
       try {
         const response = await fetch(
-          "http://localhost:4000/staff/shiftByUserId",
+          "/staff/shiftByUserId",
           {
             method: "GET",
             credentials: "include",

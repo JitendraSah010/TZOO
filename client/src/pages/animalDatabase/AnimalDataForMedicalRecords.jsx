@@ -19,7 +19,7 @@ function AnimalDataForMedicalRecords() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:4000/animal/", {
+        const response = await fetch("/animal/", {
           method: "GET",
           credentials: "include",
           headers: {
@@ -43,7 +43,7 @@ function AnimalDataForMedicalRecords() {
           const recordId = id._id;
           console.log(recordId)
           const response = await fetch(
-            `http://localhost:4000/current/${recordId}`,
+            `/current/${recordId}`,
             {
               method: "GET",
               credentials: "include",

@@ -18,7 +18,7 @@ function Edit_MedicalRecord() {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:4000/medicalRecords/${id}`, {
+      const response = await fetch(`/medicalRecords/${id}`, {
         method: "PUT",
         credentials: "include",
         headers: {
@@ -46,7 +46,7 @@ function Edit_MedicalRecord() {
       try {
 
         console.log("helljhbv")
-        const response = await fetch(`http://localhost:4000/medicalRecords/${id}`, {
+        const response = await fetch(`/medicalRecords/${id}`, {
           method: "GET",
           credentials: "include",
           headers: {

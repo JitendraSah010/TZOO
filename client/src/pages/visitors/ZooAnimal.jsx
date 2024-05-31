@@ -9,7 +9,7 @@ function ZooAnimal() {
   useEffect(() => {
     const animalData = async () => {
       try {
-        const response = await fetch("http://localhost:4000/animal/", {
+        const response = await fetch("/animal/", {
           method: "GET",
           credentials: "include",
           headers: {

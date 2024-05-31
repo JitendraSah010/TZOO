@@ -28,7 +28,7 @@ function AddAnimal() {
     e.preventDefault();
     console.log(inputData);
     try {
-      const response = await fetch("http://localhost:4000/animal/", {
+      const response = await fetch("/animal/", {
         method: "POST",
         headers: {
           "Content-Type": "application/json",

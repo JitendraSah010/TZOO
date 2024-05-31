@@ -23,7 +23,7 @@ function ChangeShift() {
   const updateShiftHandler = async (e) => {
     e.preventDefault();
     try {
-      const response = await fetch("http://localhost:4000/shiftChange/", {
+      const response = await fetch("/shiftChange/", {
         method: "POST",
         credentials: "include",
         headers: {
@@ -50,7 +50,7 @@ function ChangeShift() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:4000/user/byUserId", {
+        const response = await fetch("/user/byUserId", {
           method: "GET",
           credentials: "include",
           headers: {
@@ -71,7 +71,7 @@ function ChangeShift() {
     const shiftData = async () => {
       try {
         const response = await fetch(
-          "http://localhost:4000/staff/shiftByUserId",
+          "/staff/shiftByUserId",
           {
             method: "GET",
             credentials: "include",

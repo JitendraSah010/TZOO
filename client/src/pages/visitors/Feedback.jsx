@@ -22,7 +22,7 @@ function Feedback() {
     const updateHandler = async (e) => {
         e.preventDefault();
         try {
-          const response = await fetch("http://localhost:4000/feedback/", {
+          const response = await fetch("/feedback/", {
             method: "POST",
             credentials: "include",
             headers: {

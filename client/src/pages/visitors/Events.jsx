@@ -11,7 +11,7 @@ function Events() {
 
     const eventData = async () => {
       try {
-        const response = await fetch("http://localhost:4000/event/", {
+        const response = await fetch("/event/", {
           method: "GET",
           credentials: "include",
           headers: {

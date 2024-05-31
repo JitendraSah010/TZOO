@@ -23,7 +23,7 @@ function UpdateEvent() {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:4000/event/${id}`, {
+      const response = await fetch(`/event/${id}`, {
         method: "PUT",
         credentials: "include",
         headers: {
@@ -49,7 +49,7 @@ function UpdateEvent() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/event/${id}`, {
+        const response = await fetch(`/event/${id}`, {
           method: "GET",
           credentials: "include",
           headers: {

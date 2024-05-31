@@ -23,7 +23,7 @@ function Employees() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:4000/staff/", {
+        const response = await fetch("/staff/", {
           method: "GET",
           credentials: "include",
           headers: {
@@ -44,7 +44,7 @@ function Employees() {
 
     const shiftData = async () => {
       try {
-        const response = await fetch("http://localhost:4000/shiftChange/", {
+        const response = await fetch("/shiftChange/", {
           method: "GET",
           credentials: "include",
           headers: {

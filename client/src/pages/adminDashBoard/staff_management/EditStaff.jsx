@@ -29,7 +29,7 @@ function EditStaff() {
     e.preventDefault();
 
     try {
-      const response = await fetch(`http://localhost:4000/staff/${id}`, {
+      const response = await fetch(`/staff/${id}`, {
         method: "PUT",
         credentials: "include",
         headers: {
@@ -55,7 +55,7 @@ function EditStaff() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch(`http://localhost:4000/staff/${id}`, {
+        const response = await fetch(`/staff/${id}`, {
           method: "GET",
           credentials: "include",
           headers: {

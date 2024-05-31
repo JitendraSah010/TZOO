@@ -18,7 +18,7 @@ function Login() {
         e.preventDefault();
         try {
     
-            const response = await fetch('http://localhost:4000/user/login', {
+            const response = await fetch('/user/login', {
                 method: 'POST',
                 credentials: "include",
                 headers: {

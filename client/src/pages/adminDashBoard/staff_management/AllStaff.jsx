@@ -12,7 +12,7 @@ function AllStaff() {
 
   const deletestaffHandler = async (id) => {
     try {
-      const response = await fetch(`http://localhost:4000/staff/${id}`, {
+      const response = await fetch(`/staff/${id}`, {
         method: 'DELETE',
         headers: {
           'Content-Type': 'application/json'
@@ -38,7 +38,7 @@ function AllStaff() {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const response = await fetch("http://localhost:4000/staff/", {
+        const response = await fetch("/staff/", {
           method: "GET",
           credentials: "include",
           headers: {
