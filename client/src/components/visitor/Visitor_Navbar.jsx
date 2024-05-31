@@ -21,7 +21,7 @@ function Visitor_Navbar() {
         });
 
         if (response.ok) {
-            navigate("/login");
+            navigate("/");
             toast.success("Logged out successfully");
         } else {
             const errorData = await response.json();

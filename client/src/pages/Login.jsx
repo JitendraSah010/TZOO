@@ -70,13 +70,13 @@ function Login() {
                                 <input type="password" name='password' onChange={getInputdata} value={inputData.password} placeholder="Enter password"  className='mb-3 inputForm text-dark fw-bold p-2 w-100' />
                                 <button className="btnCss fw-bold px-4 py-1">Login</button>
                             </form>
-                            <p className='text-center mt-2 mb-0 '>Don't have account? <Link to={'/'} className='loginLink' >Register</Link>  </p>
+                            <p className='text-center mt-2 mb-0 '>Don't have account? <Link to={'/register'} className='loginLink' >Register</Link>  </p>
                         </div>
                     </div>
                 </div>
             </div>
             
-            <div className="container mt-4" style={{maxWidth:'400px'}}>
+            <div className="container mt-4" style={{maxWidth:'300px'}}>
                                 <h5 className='text-muted'>Test Accounts</h5>
                                 <Table bordered hover size="sm">
                                     <thead>

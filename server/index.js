@@ -18,6 +18,9 @@ import attendenceRoutes from './routes/attendenceRoutes.js'
 
 import paymentRoutes from './routes/paymentRoutes.js';
 
+import path from 'path';
+import { fileURLToPath } from 'url';
+
 
 // paypal integration
 import paypal from 'paypal-rest-sdk';
@@ -28,7 +31,8 @@ paypal.configure( {
     'client_secret' : process.env.CLIENT_SECRET
 } );
 
-
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
 
 const app = express();
 
@@ -43,6 +47,8 @@ app.use(cors({
     origin: "http://localhost:5173",
     credentials: true
 }));
+
+app.use(express.static(path.join(__dirname, "../client/dist")))
 
 app.use("/user", userRoutes)
 app.use("/animal", animalRoutes)
@@ -60,6 +66,10 @@ app.use("/attendance", attendenceRoutes);
 app.use('/payment', paymentRoutes );
 app.use('/visitor', paymentRoutes );
 
+
+app.get("*", (req, res) => {
+    res.sendFile(path.join(__dirname, '../client/dist/index.html'))
+  })
 
 
 

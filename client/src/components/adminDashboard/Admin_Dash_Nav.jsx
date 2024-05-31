@@ -24,7 +24,7 @@ function Admin_Dash_Nav() {
         });
 
         if (response.ok) {
-            navigate("/login");
+            navigate("/");
             toast.success("Logged out successfully");
         } else {
             const errorData = await response.json();

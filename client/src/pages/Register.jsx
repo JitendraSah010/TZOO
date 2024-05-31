@@ -71,9 +71,9 @@ function Register() {
               <div className="card-body ">
                 <div className="text-center">
                   <h1 className="logo p-1 ">
-                    {" "}
+                    
                     <span className="fw-bold logoText">T</span>
-                    <span className="world">ZOO</span>{" "}
+                    <span className="world">ZOO</span>
                   </h1>
                 </div>
                 <h3 className="text-center mt-3 mb-4 text-muted fw-bold text-decoration-underline">
@@ -128,10 +128,10 @@ function Register() {
                   <button className="btnCss fw-bold px-4 py-1">Register</button>
                 </form>
                 <p className="text-center mt-2 mb-0 ">
-                  Already have account?{" "}
-                  <Link to={"/login"} className="loginLink">
+                  Already have account?
+                  <Link to={"/"} className="loginLink">
                     login
-                  </Link>{" "}
+                  </Link>
                 </p>
               </div>
             </div>

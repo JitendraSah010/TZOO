@@ -68,8 +68,8 @@ function App() {
     <>
       <Routes>
         {/* ANIMAL SPECIALIST */}
-        <Route path="/" element={<Register />} />
-        <Route path="/login" element={<Login />} />
+        <Route path="/" element={<Login />} />
+        <Route path="/register" element={<Register />} />
         <Route path="/animal/dashboard" element={<AnimalDashboard />} />
         <Route path="/animal/addAnimal" element={<Add_animal />} />
         <Route
