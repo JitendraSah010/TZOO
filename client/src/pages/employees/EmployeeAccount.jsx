@@ -78,7 +78,7 @@ function EmployeeAccount() {
                     alt=""
                   />
                   <figcaption className="fw-bold fs-3 mt-2 mb-3 text-muted text-decoration-underline">
-                    {data.name} !
+                    {data.name}
                   </figcaption>
                   <p>
                     Welcome back, valued team member! Your dedication enriches
@@ -95,7 +95,7 @@ function EmployeeAccount() {
                       ? "Evening (06:00 PM - 12:00 AM)"
                       : shift.shift === "4"
                       ? "Night (12:00 AM - 06:00 AM)"
-                      : "Not assigned"}
+                      : null}
                   </h4>
                   <p className=" fs-6">
                     

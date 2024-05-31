@@ -116,7 +116,7 @@ function ChangeShift() {
                       ? "Evening (06:00 PM - 12:00 AM)"
                       : shiftData.shift === "4"
                       ? "Night (12:00 AM - 06:00 AM)"
-                      : "Not assigned"}
+                      : null}
                   </p>
 
                   <div className="mt-4">
