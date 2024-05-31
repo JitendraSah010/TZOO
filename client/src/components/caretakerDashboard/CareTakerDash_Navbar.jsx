@@ -70,6 +70,9 @@ function AnimalDash_Navbar() {
               <Link to={"/caretaker/employee"} className="navLink px-2 mb-3">
                 Employees
               </Link>
+              <Link to={"/caretaker/attendance"} className="navLink px-2 mb-3">
+                Attendance
+              </Link>
               <Link to={"/caretaker/animal"} className="navLink px-2 mb-3">
                 Animal
               </Link>

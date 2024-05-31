@@ -57,6 +57,7 @@ function Employee_Navbar() {
 
           <Nav className='text-center  mt-2 d-flex d-lg-none justify-content-center align-items-center'>
             <Link to={'/employee'} className='navLink px-2 mb-3'>Home</Link>
+            <Link to={'/employee/attendence'} className='navLink px-2 mb-3'>Attendance</Link>
             <Link to={'/employee/eventControl'} className='navLink px-2 mb-3 '>Event Control </Link>
             {/* <Link to={'/employee/support'} className='navLink px-2 mb-3 '>Support Centre </Link> */}
             <Link  onClick={logoutHandler} className='navLink px-2 mb-3' >logout</Link>

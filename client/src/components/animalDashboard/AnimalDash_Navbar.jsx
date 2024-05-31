@@ -47,29 +47,19 @@ function AnimalDash_Navbar() {
             <Link to={'/animal/dashboard'} className='navLink px-2'>Home</Link>
             <Link to={'/animal/attendance'} className='navLink px-2'>Attendance</Link>
             <Link to={'/animal/addAnimal'} className='navLink px-2'>Add animal</Link>
-            <Link to={'/animal/MedicalRecord'} className='navLink px-2'>MedicalRecords</Link>
+            <Link to={'/animal/MedicalRecord'} className='navLink px-2'>Medical Records</Link>
             <Link to={'/animal/message'} className='navLink px-2'>Report Message </Link>
-            {/* <form action="" >
-              <div className='searchDiv'>
-                <input type="search" name="searchInput" className='navLink w-100 px-2 searchBar py-1' placeholder='Search' />
-                <button className='searchBtn' > <MdOutlineSearch className='searchIcon'/> </button>
-              </div>
-            </form> */}
             <Link onClick={logoutHandler} className='navLink px-2 mx-4'>logout</Link>
           </Nav>
 {/*-------------------------------for small screen size content----------------------  */}
 
           <Nav className='text-center  mt-2 d-flex d-lg-none justify-content-center align-items-center'>
             <Link to={'/animal/dashboard'} className='navLink px-2 mb-3'>Home</Link>
+            <Link to={'/animal/attendance'} className='navLink px-2 mb-3'>Attendance</Link>
             <Link to={'/animal/addAnimal'} className='navLink px-2 mb-3'>Add animal</Link>
-            <Link to={'/animal/message'} className='navLink px-2 mb-3 '>Message(5) </Link>
+            <Link to={'/animal/MedicalRecord'} className='navLink px-2 mb-3 '>Medical Records </Link>
+            <Link to={'/animal/message'} className='navLink px-2 mb-3 '>Report Message </Link>
             <Link onClick={logoutHandler} className='navLink px-2 mb-3' >logout</Link>
-            {/* <form action="" >
-              <div className='searchDiv1 mb-2' >
-                <input type="search" name="" className='navLink px-2 searchBar py-1' placeholder='Search' />
-                <button className='searchBtn'> <MdOutlineSearch className='searchIcon'/> </button>
-              </div>
-            </form> */}
           </Nav>
         </Navbar.Collapse>
       </Container>
